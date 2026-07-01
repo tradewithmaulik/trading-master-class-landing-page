@@ -8,7 +8,6 @@
 
 <title>Trading Master Class</title>
 
-
 <style>
 
 *{
@@ -18,11 +17,9 @@ box-sizing:border-box;
 font-family:Arial,Helvetica,sans-serif;
 }
 
-
 html{
 scroll-behavior:smooth;
 }
-
 
 body{
 background:#050505;
@@ -30,32 +27,20 @@ color:white;
 overflow-x:hidden;
 }
 
-
-
 .container{
-
 width:90%;
 max-width:1200px;
 margin:auto;
-
 }
-
 
 
 /* HERO */
 
 .hero{
 
-min-height:auto;
-
 padding:60px 20px 20px;
 
-display:flex;
-
-align-items:center;
-
 text-align:center;
-
 
 background:
 
@@ -66,21 +51,12 @@ rgba(0,0,0,.95)
 
 url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3");
 
-
 background-size:cover;
-
 background-position:center;
 
-}
-
-
-
-.hero .container{
-
-animation:fadeDown 1.2s ease;
+animation:fadeDown 1s ease;
 
 }
-
 
 
 .hero h1{
@@ -89,12 +65,7 @@ font-size:clamp(35px,5vw,55px);
 
 color:#00ff99;
 
-animation:floating 3s infinite;
-
-line-height:1.2;
-
 }
-
 
 
 .brand-name{
@@ -108,34 +79,22 @@ font-weight:normal;
 }
 
 
-
 .hero p{
 
-font-size:clamp(16px,2vw,20px);
+font-size:20px;
 
 margin:20px auto;
 
 max-width:750px;
 
-line-height:1.6;
-
 color:#ddd;
 
-}
-
-
-
-.hero h2{
-
-font-size:clamp(22px,3vw,30px);
+line-height:1.5;
 
 }
 
 
-
-
-
-
+/* BUTTON */
 
 .btn{
 
@@ -155,12 +114,11 @@ font-weight:bold;
 
 text-decoration:none;
 
-animation:pulse 2s infinite;
-
 transition:.3s;
 
-}
+animation:pulse 2s infinite;
 
+}
 
 
 .btn:hover{
@@ -173,34 +131,43 @@ background:white;
 
 
 
+.telegram-btn{
+
+background:#229ED9;
+
+color:white;
+
+}
 
 
-/* SECTION */
+.telegram-btn:hover{
 
-
-section{
-
-padding:30px 0;
+color:#229ED9;
 
 }
 
 
 
+
+
+section{
+
+padding:35px 0;
+
+}
 
 
 .title{
 
 text-align:center;
 
-font-size:clamp(28px,4vw,38px);
+font-size:38px;
 
 color:#00ff99;
 
 margin-bottom:35px;
 
 }
-
-
 
 
 
@@ -220,7 +187,6 @@ gap:25px;
 }
 
 
-
 .card{
 
 background:#111;
@@ -231,22 +197,18 @@ border-radius:20px;
 
 border:1px solid #222;
 
-transition:.5s;
-
-animation:slideUp 1s ease;
+transition:.4s;
 
 }
-
 
 
 .card:hover{
 
-transform:translateY(-12px);
+transform:translateY(-10px);
 
-box-shadow:0 0 30px #00ff9955;
+box-shadow:0 0 25px #00ff9955;
 
 }
-
 
 
 .card h3{
@@ -259,21 +221,9 @@ margin-bottom:15px;
 
 
 
-.card p{
-
-line-height:1.5;
-
-}
-
-
-
-
-
-
 
 
 /* MODULE */
-
 
 .module{
 
@@ -283,24 +233,11 @@ padding:22px;
 
 margin:12px 0;
 
-border-radius:15px;
-
 border-left:5px solid #00ff99;
 
-transition:.4s;
+border-radius:15px;
 
 }
-
-
-
-.module:hover{
-
-transform:translateX(12px);
-
-background:#151515;
-
-}
-
 
 
 .module h3{
@@ -313,26 +250,21 @@ color:#00ff99;
 
 
 
-
-
 /* PRICE */
-
 
 .price-box{
 
-width:90%;
+background:#111;
 
 max-width:500px;
 
+margin:auto;
+
+padding:40px;
+
 text-align:center;
 
-background:#111;
-
-padding:40px 25px;
-
 border-radius:25px;
-
-margin:auto;
 
 animation:glow 3s infinite;
 
@@ -340,24 +272,9 @@ animation:glow 3s infinite;
 
 
 
-.price{
-
-font-size:clamp(40px,6vw,55px);
-
-color:#00ff99;
-
-margin:20px;
-
-}
-
-
-
-
-
 
 
 /* FAQ */
-
 
 .faq{
 
@@ -369,10 +286,7 @@ margin:12px 0;
 
 border-radius:15px;
 
-line-height:1.6;
-
 }
-
 
 
 .faq b{
@@ -385,21 +299,15 @@ color:#00ff99;
 
 
 
-
-
 footer{
 
-background:#000;
-
 text-align:center;
+
+background:#000;
 
 padding:25px;
 
 }
-
-
-
-
 
 
 
@@ -428,51 +336,6 @@ transform:translateY(0);
 }
 
 
-
-
-@keyframes floating{
-
-0%,100%{
-
-transform:translateY(0);
-
-}
-
-50%{
-
-transform:translateY(-8px);
-
-}
-
-}
-
-
-
-
-@keyframes slideUp{
-
-from{
-
-opacity:0;
-
-transform:translateY(40px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-}
-
-
-
-
-
 @keyframes pulse{
 
 0%{
@@ -481,13 +344,11 @@ box-shadow:0 0 0 0 #00ff9955;
 
 }
 
-
 70%{
 
 box-shadow:0 0 0 20px transparent;
 
 }
-
 
 100%{
 
@@ -498,11 +359,7 @@ box-shadow:0 0 0 0 transparent;
 }
 
 
-
-
-
 @keyframes glow{
-
 
 0%,100%{
 
@@ -510,86 +367,23 @@ box-shadow:0 0 15px #00ff9944;
 
 }
 
-
 50%{
 
 box-shadow:0 0 40px #00ff9988;
 
 }
 
-
 }
 
-
-
-
-
-
-
-/* TABLET */
-
-
-@media(max-width:900px){
-
-
-.hero{
-
-min-height:auto;
-
-}
-
-
-}
-
-
-
-
-
-
-/* MOBILE */
 
 
 @media(max-width:600px){
-
 
 .container{
 
 width:92%;
 
 }
-
-
-
-.hero{
-
-padding:45px 15px 15px;
-
-}
-
-
-
-.cards{
-
-grid-template-columns:1fr;
-
-}
-
-
-
-.card{
-
-padding:25px;
-
-}
-
-
-
-.module{
-
-padding:20px;
-
-}
-
 
 
 .btn{
@@ -601,42 +395,25 @@ max-width:300px;
 }
 
 
+.hero p{
 
-.price-box{
-
-padding:35px 20px;
-
-}
-
-
-
-footer{
-
-font-size:14px;
+font-size:16px;
 
 }
 
-
-
 }
-
 
 
 </style>
 
-
 </head>
-
-
 
 
 <body>
 
 
 
-
 <div class="hero">
-
 
 <div class="container">
 
@@ -657,7 +434,6 @@ by Trade With Maulik
 
 
 
-
 <p>
 
 Complete Beginner To Advanced Forex Trading Course.
@@ -667,14 +443,15 @@ Learn Market Structure, Liquidity, SMC Entries, Psychology & Professional Tradin
 
 
 
-<a href="https://forms.gle/e48tujnMbaNbLQkcA" class="btn" target="_blank">
+<a href="https://forms.gle/e48tujnMbaNbLQkcA" 
+class="btn" 
+target="_blank">
 
 JOIN THE COURSE
 
 </a>
 
 
-
 </div>
 
 </div>
@@ -683,13 +460,9 @@ JOIN THE COURSE
 
 
 
-
-
-<section id="course">
-
+<section>
 
 <div class="container">
-
 
 <h2 class="title">
 
@@ -698,78 +471,36 @@ What You Will Learn
 </h2>
 
 
-
-
-
 <div class="cards">
 
 
 <div class="card">
-
 <h3>Forex Basics</h3>
-
-<p>
-
-Forex Introduction, Pips, Spread, Currency Pair, Trading Software
-
-</p>
-
+<p>Forex Introduction, Pips, Spread, Currency Pair, Trading Software</p>
 </div>
 
 
-
-
 <div class="card">
-
 <h3>Market Structure</h3>
-
-<p>
-
-BOS, CHOCH, Internal & External Structure
-
-</p>
-
+<p>BOS, CHOCH, Internal & External Structure</p>
 </div>
 
 
-
-
-
 <div class="card">
-
 <h3>SMC Concepts</h3>
-
-<p>
-
-Order Blocks, FVG, Liquidity, Breaker Blocks, IPDA
-
-</p>
-
+<p>Order Blocks, FVG, Liquidity, Breaker Blocks, IPDA</p>
 </div>
-
-
-
 
 
 <div class="card">
-
 <h3>Trading Psychology</h3>
-
-<p>
-
-Risk Management, Discipline & Professional Mindset
-
-</p>
-
-</div>
-
-
-
+<p>Risk Management, Discipline & Professional Mindset</p>
 </div>
 
 
 </div>
 
+</div>
 
 </section>
 
@@ -777,11 +508,7 @@ Risk Management, Discipline & Professional Mindset
 
 
 
-
-
-
 <section>
-
 
 <div class="container">
 
@@ -794,104 +521,45 @@ Complete Curriculum
 
 
 
-
-
 <div class="module">
-
 <h3>Module 1 - Forex Basics</h3>
-
-<p>
-
-Introduction, Participants, Software, Pips, Spread, Correlation
-
-</p>
-
+<p>Introduction, Participants, Software, Pips, Spread, Correlation</p>
 </div>
 
 
-
-
 <div class="module">
-
 <h3>Module 2 - Analysis</h3>
-
-<p>
-
-Candlesticks, Trends, Technical & Fundamental Analysis
-
-</p>
-
+<p>Candlesticks, Trends, Technical & Fundamental Analysis</p>
 </div>
 
 
-
-
 <div class="module">
-
 <h3>Module 3 - Structure & Levels</h3>
-
-<p>
-
-123 Method, ICI Method, Trend Joining Levels
-
-</p>
-
+<p>123 Method, ICI Method, Trend Joining Levels</p>
 </div>
 
 
-
-
 <div class="module">
-
 <h3>Module 4 - Price Action</h3>
-
-<p>
-
-CHOCH, RBS, SBR, QML, Double CHOCH
-
-</p>
-
+<p>CHOCH, RBS, SBR, QML, Double CHOCH</p>
 </div>
 
 
-
-
 <div class="module">
-
 <h3>Module 5 - Advanced SMC</h3>
-
-<p>
-
-Supply Demand, Order Blocks, FVG, Liquidity
-
-</p>
-
+<p>Supply Demand, Order Blocks, FVG, Liquidity</p>
 </div>
-
-
 
 
 <div class="module">
-
 <h3>Module 6 - Trading Mastery</h3>
-
-<p>
-
-Top Down Analysis, News, Fundamentals, Psychology
-
-</p>
-
+<p>Top Down Analysis, News, Fundamentals, Psychology</p>
 </div>
 
 
-
 </div>
-
 
 </section>
-
-
-
 
 
 
@@ -910,7 +578,6 @@ Trading Master Class
 </h2>
 
 
-
 <p>
 
 Lifetime Access + Complete Trading Framework
@@ -918,14 +585,13 @@ Lifetime Access + Complete Trading Framework
 </p>
 
 
-
-
-<a href="https://forms.gle/e48tujnMbaNbLQkcA" class="btn" target="_blank">
+<a href="https://forms.gle/e48tujnMbaNbLQkcA"
+class="btn"
+target="_blank">
 
 JOIN THE COURSE
 
 </a>
-
 
 
 </div>
@@ -937,13 +603,29 @@ JOIN THE COURSE
 
 
 
-
-
-
 <section>
 
-
 <div class="container">
+
+
+<div style="text-align:center;margin-bottom:35px;">
+
+
+<a href="https://t.me/tradewithmauliklive"
+
+class="btn telegram-btn"
+
+target="_blank">
+
+
+JOIN OFFICIAL TELEGRAM
+
+
+</a>
+
+
+</div>
+
 
 
 <h2 class="title">
@@ -951,7 +633,6 @@ JOIN THE COURSE
 FAQ
 
 </h2>
-
 
 
 
@@ -969,8 +650,6 @@ Yes. Starts from basic forex concepts.
 
 
 
-
-
 <div class="faq">
 
 <b>Will I learn SMC entries?</b>
@@ -982,8 +661,6 @@ Yes. Complete SMC framework.
 </p>
 
 </div>
-
-
 
 
 
@@ -1000,15 +677,9 @@ No. Trading requires practice and risk management.
 </div>
 
 
-
-
 </div>
 
-
 </section>
-
-
-
 
 
 
@@ -1018,9 +689,6 @@ No. Trading requires practice and risk management.
 © 2026 Trading Master Class
 
 </footer>
-
-
-
 
 
 </body>
